@@ -17,11 +17,12 @@ const Button = ({children, type = 'solid', className = ""} : TButton) => {
 type TNavButton = {
   children: React.ReactNode
   url: string
+  className?: string
 }
 
-export const NavButton = ({children, url} : TNavButton) => {
+export const NavButton = ({children, url, className} : TNavButton) => {
   return (
-    <Link href={url} className='px-3 py-2 border border-transparent text-black rounded-lg hover:border hover:text-black hover:border-black active:bg-black active:text-white focus:border focus:border-black focus:text-black outline-gray-500 target:bg-black target:text-white'>{children}</Link>
+    <Link href={url} className={`px-3 py-2 border border-transparent lg:text-black lg:hover:rounded-lg lg:hover:text-black lg:hover:border-black lg:active:bg-black lg:active:text-white lg:focus:border lg:focus:border-black lg:focus:text-black outline-gray-500 lg:target:bg-black lg:target:text-white text-white hover:border-b-2 hover:border-b-white hover:rounded-none ${className}`}>{children}</Link>
   );
 }
 

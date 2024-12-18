@@ -30,7 +30,7 @@ const testimonials : ITestimonial[] = [
 const TestimonialSection = () => {
   const id = useId();
   return (
-    <section className='px-16 py-16 border border-black'>
+    <section className='lg:px-16 px-10 py-12 lg:py-16 border border-black'>
       <Heading centered>Testimonials</Heading>
       <div className='flex justify-center items-center gap-5 flex-wrap flex-row mt-10 mb-10'>
         {

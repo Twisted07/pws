@@ -11,10 +11,10 @@ const FooterNav = ({list, heading} : {list: INavList[], heading: string}) => {
   const id = useId();
   return (
     <div>
-      <h1 className='text-3xl font-bold tracking-normal'>{heading}</h1>
-      <nav className='mt-3'>
+      <h1 className='lg:text-3xl text-md font-semibold lg:font-bold tracking-normal'>{heading}</h1>
+      <nav className='lg:mt-3 mt-2'>
         {
-          list.map((link, index) => (<Link href={link.link} key={id + index}><h6 className='text-lg'>{link.text}</h6></Link>))
+          list.map((link, index) => (<Link href={link.link} key={id + index}><h6 className='lg:text-lg text-sm'>{link.text}</h6></Link>))
         }
       </nav>
     </div>

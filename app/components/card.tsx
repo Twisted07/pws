@@ -18,7 +18,7 @@ const Card = ({name, image, content} : ITestimonial) => {
         </div>
       </div>
 
-      <p className='mt-7 tracking-wide leading-relaxed'>{content}</p>
+      <p className='mt-7 tracking-normal lg:tracking-wide leading-relaxed'>{content}</p>
     </div>
   )
 }

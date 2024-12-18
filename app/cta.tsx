@@ -9,10 +9,10 @@ const CtaSection = () => {
 
 
   return (
-    <section className='p-16 border border-black'>
+    <section className='lg:p-16 px-10 py-12 border border-black'>
       <Heading centered>Get Involved</Heading>
-      <h2 className='font-semibold text-2xl text-center'>Want to make a difference? Here is how you can help</h2>
-      <div className='flex justify-center items-center gap-5 flex-wrap mt-16 mb-10'>
+      <h2 className='lg:font-semibold font-normal lg:text-2xl text-lg text-center'>Want to make a difference? Here is how you can help</h2>
+      <div className='flex justify-center items-center gap-5 flex-wrap lg:mt-16 mt-12 mb-10'>
         {
           imageList.map((_, index) => (<ImageContainer key={id + index} image={`https://picsum.photos/200/40${index}`} />))
         }

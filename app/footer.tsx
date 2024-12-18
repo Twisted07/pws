@@ -45,26 +45,26 @@ const Footer = () => {
 
   const contactLinks = [
     {
-      text: 'Email: periodwithsmile@gmail.com',
+      text: 'periodwithsmile@gmail.com',
       link: 'mailto:periodwithsmile@gmail.com'
     },
     {
-      text: 'Call: +2348101026254',
+      text: '+2348101026254',
       link: 'tel:+2348101026254'
     },
   ];
 
   return (
-    <footer className='bg-stone-700 text-white px-16 pt-20 pb-10'>
-      <div className='flex justify-between items-start gap-5'>
+    <footer className='bg-stone-700 text-white px-8 pt-16 pb-8 lg:px-16 lg:pt-20 lg:pb-10'>
+      <div className='flex flex-wrap gap-y-10 gap-x-3 justify-between items-start lg:gap-5'>
         <h1>Logo</h1>
         <FooterNav list={quickLinks} heading='Quick Links'/>
         <FooterNav list={legalLinks} heading='Legal Links' />
         <FooterNav list={contactLinks} heading='Contact' />
 
         <div>
-          <h1 className='text-3xl font-bold tracking-normal'>Follow us</h1>
-          <div className='flex gap-5 mt-3 items-center justify-between'>
+          <h1 className='lg:text-3xl text-md font-semibold lg:font-bold tracking-normal'>Follow us</h1>
+          <div className='flex lg:gap-5 lg:mt-3 gap-3 mt-2 items-center justify-between'>
             <FaFacebook color='white' size={27} />
             <FaInstagram color='white' size={27} />
             <FaXTwitter color='white' size={27}/>
