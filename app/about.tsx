@@ -1,5 +1,4 @@
 import React from 'react'
-import Heading from './components/heading';
 import Section from './components/section';
 
 const AboutSection = () => {

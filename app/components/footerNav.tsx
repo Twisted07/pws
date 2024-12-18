@@ -8,12 +8,13 @@ export interface INavList {
 }
 
 const FooterNav = ({list, heading} : {list: INavList[], heading: string}) => {
+  const id = useId();
   return (
     <div>
       <h1 className='text-3xl font-bold tracking-normal'>{heading}</h1>
       <nav className='mt-3'>
         {
-          list.map(link => (<Link href={link.link} key={useId()}><h6 className='text-lg'>{link.text}</h6></Link>))
+          list.map((link, index) => (<Link href={link.link} key={id + index}><h6 className='text-lg'>{link.text}</h6></Link>))
         }
       </nav>
     </div>
