@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './components/section';
-import image from '@/app/assets/image1.jpg'
+import image from '@/assets/image1.jpg'
 const AboutSection = () => {
   return (
     <Section

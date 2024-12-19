@@ -1,11 +1,14 @@
 import React from 'react'
 import Heading from './components/heading'
+import SectionWrapper from './components/sectionWrapper'
 
 const SponsorsSection = () => {
   return (
-    <section className='p-16'>
+    <SectionWrapper border>
       <Heading centered>Meet Our Sponsors</Heading>
-    </section>
+      <p className='text-center'>Coming soon...</p>
+    </SectionWrapper>
+
   )
 }
 
