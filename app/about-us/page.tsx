@@ -2,6 +2,8 @@ import React from 'react'
 import HeroSection from './hero'
 import WhoWeAre from './whoweare'
 import Vision from './vision'
+import Mission from './mission'
+import Values from './values'
 
 const AboutPage = () => {
   return (
@@ -9,6 +11,8 @@ const AboutPage = () => {
       <HeroSection />
       <WhoWeAre />
       <Vision />
+      <Mission />
+      <Values />
     </main>
   )
 }

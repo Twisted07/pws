@@ -20,7 +20,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <ImageContainer image={heroImage.src} className="mt-5" wide />
+      <ImageContainer image={heroImage.src} className="mt-5 md:mt-0" wide />
     </SectionWrapper>
 
   )
