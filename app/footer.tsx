@@ -1,5 +1,5 @@
 import React from 'react'
-import FooterNav, { INavList } from './components/footerNav'
+import FooterNav from './components/footerNav'
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 

@@ -2,10 +2,6 @@
 import Link from 'next/link'
 import React, { useId } from 'react'
 
-export interface INavList {
-  text: string
-  link: string
-}
 
 const FooterNav = ({list, heading} : {list: INavList[], heading: string}) => {
   const id = useId();

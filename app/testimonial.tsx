@@ -2,7 +2,7 @@
 
 import React, { useId } from 'react'
 import Heading from './components/heading'
-import Card, { ITestimonial } from './components/card';
+import Card from './components/card';
 import SectionWrapper from './components/sectionWrapper';
 
 const testimonials : ITestimonial[] = [

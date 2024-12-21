@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from './hero'
+import WhySupportUs from './whySupportUs'
 
 const OurProgramsPage = () => {
   return (
-    <div>OurProgramsPage</div>
+    <main>
+      <Hero />
+      <WhySupportUs />
+    </main>
   )
 }
 

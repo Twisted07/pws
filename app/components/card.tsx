@@ -1,10 +1,5 @@
 import React from 'react'
 
-export interface ITestimonial {
-  name: string
-  image: string
-  content: string
-}
 
 const Card = ({name, image, content} : ITestimonial) => {
   return (
