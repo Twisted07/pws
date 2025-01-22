@@ -3,9 +3,11 @@
 import React, { useState } from 'react'
 import Button, { NavButton } from './components/button'
 import { IoCloseSharp, IoMenu } from 'react-icons/io5'
+import Link from 'next/link';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const helpa = "https://helpa.me/d/jaZRNT?campaign_name=pad-5k-girls";
 
   function toggleOpen() {
     setIsOpen(!isOpen);
@@ -28,10 +30,10 @@ const Header = () => {
           <NavButton url={"/our-programs"}>Our programs</NavButton>
           <NavButton url={"/our-schedule"}>Our schedule</NavButton>
           <NavButton url='/contact-us'>Contact us</NavButton>
-          <NavButton url='/donate' className='lg:hidden'>Donate</NavButton>
+          <NavButton url={helpa} target='_blank' className='lg:hidden'>Donate</NavButton>
           
         </div>
-        <Button type='transparent' className='hidden lg:block'>Donate</Button>
+        <Link href={helpa} target='_blank'><Button type='transparent' className='hidden lg:block'>Donate</Button></Link>
       </header>
     </>
   )
