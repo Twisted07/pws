@@ -20,7 +20,7 @@ const Header = () => {
       </button>
 
       <header className='flex justify-between items-center px-8 lg:px-16 py-5'>
-        <h1>Logo</h1>
+        <h1 className='font-bold tracking-wide text-3xl'>PWS</h1>
         <div className={`flex flex-col h-[100dvh] w-full fixed top-0 right-0 lg:relative lg:h-auto lg:w-auto lg:bg-transparent bg-stone-700 bg-opacity-95 backdrop-blur-sm justify-center gap-3 items-center font-semibold text-md z-100 ${!isOpen && ("hidden")} lg:flex-row lg:flex`}>
           <button className='w-10 h-10 text-white absolute top-5 left-7 z-200 lg:hidden' onClick={toggleOpen}>
             <IoCloseSharp className='w-full h-full text-white' />

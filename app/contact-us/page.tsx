@@ -1,6 +1,8 @@
 "use client"
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import Label from '../components/label';
+import Input from '../components/input';
 
 const ContactUsPage = () => {
 
@@ -21,25 +23,27 @@ const ContactUsPage = () => {
   }
   
   return (
-    <div>
-      <h1>Get in touch with us</h1>
-      <form ref={ref} onSubmit={handleSubmit}>
+    <div className='flex flex-col items-center justify-center py-20 mb-20 border-t border-t-black px-3'>
+      <h1 className='font-semibold text-2xl md:text-4xl'>Get in touch with us</h1>
+      <h6 className='mt-3 md:text-lg mb-2'>Have questions? Want to partner with us?</h6>
+      <h6 className='text-center italic'>Kindly send us a message and we will get in touch with you as soon as possible.</h6>
+      <form className='mt-10 w-[70%] lg:w-[50%] xl:w-[40%] border-black border rounded-md p-7 flex flex-col gap-3 md:gap-5' ref={ref} onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="from_name" />
+          <Label content={'Name'} htmlFor="name" />
+          <Input className='block' placeholder="Jamie" type="text" id="name" name="from_name" />
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="reply_to" id="email" />
+          <Label content='Email' htmlFor="email" />
+          <Input className='block' placeholder="abc@gmail.com" type="email" name="reply_to" id="email" />
         </div>
 
         <div>
-          <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows={20} cols={30}/>
+          <Label content='Message' htmlFor="message" className='block mb-3 text-md' />
+          <textarea name="message" id="message" className='border rounded-md w-full' rows={5} />
         </div>
 
-        <button>Submit</button>
+        <button className='w-full py-1 md:py-3 text-sm md:text-md rounded-md bg-black text-white'>Submit</button>
       </form>
     </div>
   )
